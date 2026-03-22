@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>西电青协环保部-首页</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-inner">
+            <a class="brand" href="index.html">
+                <div class="brand-badge">环</div>
+                <div class="brand-text">
+                    <span class="brand-title">XDU 青协环保部</span>
+                    <span class="brand-subtitle">Green Volunteer Department</span>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">首页</a></li>
+                <li><a href="organization.html" class="">组织架构</a></li>
+                <li><a href="history.html" class="">部门历史</a></li>
+                <li><a href="division.html" class="">部门分工</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <span class="hero-tag">Department Portal</span>
+            <h1>西电青协环保部</h1>
+            <p>点击不同栏目进入相应页面浏览内容。当前版本已经给所有页面补好了图片展示位置，并写好了详细注释，适合你继续补图后直接发布。</p>
+            <div class="hero-actions">
+                <a class="button primary" href="organization.html">查看组织架构</a>
+                <a class="button secondary" href="division.html">浏览部门分工</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-panel">
+                <div class="panel-title">Department Snapshot</div>
+                <div class="metric-grid">
+                    <div class="metric-card"><strong>1</strong><span>名正部长</span></div>
+<div class="metric-card"><strong>6</strong><span>名副部长</span></div>
+<div class="metric-card"><strong>58</strong><span>名部员</span></div>
+<div class="metric-card"><strong>5</strong><span>个工作小组</span></div>
+                </div>
+                <div class="tag-cloud"><span>环保宣传</span><span>绿色实践</span><span>公益服务</span><span>校园文明</span></div>
+                <div class="panel-note">首页右侧保留统计总览，正文里新增了首页图片展示区，方便你放部门大合照或主视觉图。</div>
+            </div>
+        </div>
+    </section>
+
+    <main class="main">
+
+<section class="section">
+    <div class="section-header">
+        <div class="section-eyebrow">Homepage Visual</div>
+        <h2 class="section-title">首页主图展示区</h2>
+        <p class="section-desc">这里建议放环保部整体氛围最强的一张图片，比如部门大合照、品牌活动现场图，或者能代表部门气质的主视觉海报。</p>
+    </div>
+    
+        <!-- 图片占位区开始：index-homepage-main-image
+             使用方法：
+             1. 把你自己的图片放到 images 文件夹下，例如 images/index-main.jpg
+             2. 保持文件名一致，或同步修改下面 img 标签里的 src
+             3. 建议图片比例：
+                - large: 16:9 或 3:2
+                - tall: 4:5 或竖图
+                - small: 1:1 或 4:3
+             4. alt 请改成与你图片内容相符的描述，便于无障碍和 SEO
+             5. 如果暂时没有图片，也可以保留这个占位区不删，页面仍可正常显示
+        -->
+        <div class="image-slot large">
+            <img src="images/index-main.jpg" alt="首页主图占位" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="image-slot-overlay">
+                <div class="image-slot-label">
+                    <strong>首页主图占位</strong>
+                    <span>建议放部门大合照、活动主视觉或最具代表性的现场照片。</span>
+                </div>
+            </div>
+        </div>
+        <!-- 图片占位区结束：index-homepage-main-image -->
+    
+</section>
+
+<section class="section">
+    <div class="section-header">
+        <div class="section-eyebrow">Overview</div>
+        <h2 class="section-title">部门介绍导航</h2>
+        <p class="section-desc">首页保留总览功能，同时增加图片展示区域，让页面更像正式官网，而不是纯文字页。</p>
+    </div>
+    <div class="link-grid">
+        <a class="link-card" href="organization.html">
+            <span class="mini-badge">Structure</span>
+            <h3>组织架构</h3>
+            <p>查看环保部的组织层级、部长团职责分工，以及各工作模块之间的协作关系。</p>
+        </a>
+        <a class="link-card" href="history.html">
+            <span class="mini-badge">History</span>
+            <h3>部门历史</h3>
+            <p>了解环保部的发展脉络、阶段特点与精神传承，突出一届届成员接力前行的部门气质。</p>
+        </a>
+        <a class="link-card" href="division.html">
+            <span class="mini-badge">Groups</span>
+            <h3>部门分工</h3>
+            <p>浏览五个工作小组的方向概览，并继续进入每个小组的独立展示页面。</p>
+        </a>
+    </div>
+</section>
+
+<section class="section">
+    <div class="grid-2">
+        <article class="card">
+            <h3>关于环保部</h3>
+            <p>环保部是西安电子科技大学青年志愿者协会的重要组成部门，长期围绕环保宣传、绿色实践、公益服务与校园文明建设开展工作。</p>
+            <p>网站整体采用“首页总览 + 二级页面延展 + 小组页独立展示”的结构，更适合后续补充活动图文、品牌项目和阶段成果，也方便 GitHub Pages 直接部署与更新。</p>
+        </article>
+        <div class="surface">
+            <h3 style="margin-bottom: 14px; color: var(--primary-dark);">页面特色</h3>
+            <div class="keyword-list">
+                <span>统一视觉</span>
+                <span>可继续扩充</span>
+                <span>直接上传可用</span>
+                <span>支持图片替换</span>
+            </div>
+            <div class="panel-note" style="margin-top: 18px; color: #4d6358; background: rgba(102, 187, 106, 0.08); border-color: rgba(76, 175, 80, 0.12);">
+                我已经在每个页面都写了详细 HTML 注释。后续你只要找到“图片占位区开始”这类注释，就能快速定位并替换图片。
+            </div>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <footer class="footer">
+        西安电子科技大学青年志愿者协会环保部 ｜ 让环保理念在行动中发光
+    </footer>
+</body>
+</html>
