@@ -2,152 +2,21 @@
 <html lang="zh-CN">
 
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
 
     <meta
         name="viewport"
         content="width=device-width, initial-scale=1.0"
-    />
+    >
 
     <title>西电青协环保部-首页</title>
 
-    <!-- 网站原有样式 -->
-    <link rel="stylesheet" href="styles.css" />
-
-
-    <!-- ==================================================
-         首页额外样式
-    =================================================== -->
-    <style>
-
-        /* ==================================================
-           部门合影
-        =================================================== */
-
-        .group-photo-frame {
-            width: 100%;
-            margin-top: 24px;
-
-            overflow: hidden;
-
-            border-radius: 24px;
-
-            background: #eef7ef;
-
-            box-shadow:
-                0 14px 40px
-                rgba(27, 94, 32, 0.12);
-        }
-
-
-        .group-photo-frame img {
-            width: 100%;
-            height: auto;
-
-            display: block;
-
-            object-fit: contain;
-        }
-
-
-
-        /* ==================================================
-           团建照片轮播
-        =================================================== */
-
-        .team-slider {
-            position: relative;
-
-            width: 100%;
-
-            height: clamp(300px, 48vw, 620px);
-
-            overflow: hidden;
-
-            margin-top: 24px;
-
-            border-radius: 24px;
-
-            background: #eaf4ec;
-
-            box-shadow:
-                0 14px 40px
-                rgba(27, 94, 32, 0.12);
-        }
-
-
-        /* 每一张团建照片 */
-        .team-slide {
-            position: absolute;
-
-            top: 0;
-            left: 0;
-
-            width: 100%;
-            height: 100%;
-
-            object-fit: cover;
-
-            opacity: 0;
-
-            transform: scale(1.025);
-
-            transition:
-                opacity 1.2s ease-in-out,
-                transform 1.8s ease-in-out;
-        }
-
-
-        /* 当前显示的照片 */
-        .team-slide.active {
-            opacity: 1;
-
-            transform: scale(1);
-
-            z-index: 2;
-        }
-
-
-
-        /* 手机适配 */
-        @media (max-width: 768px) {
-
-            .group-photo-frame {
-                border-radius: 18px;
-            }
-
-            .team-slider {
-                height: 280px;
-
-                border-radius: 18px;
-            }
-
-        }
-
-
-
-        /* 减少动态效果 */
-        @media (prefers-reduced-motion: reduce) {
-
-            .team-slide {
-                transition: opacity 0.4s linear;
-
-                transform: none;
-            }
-
-            .team-slide.active {
-                transform: none;
-            }
-
-        }
-
-    </style>
-
+    <!-- 全站 CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 
 <body>
-
 
     <!-- ==================================================
          顶部导航栏
@@ -156,17 +25,12 @@
 
         <div class="nav-inner">
 
-
             <!-- 左上角部门标识 -->
-            <a
-                class="brand"
-                href="index.html"
-            >
+            <a class="brand" href="index.html">
 
                 <div class="brand-badge">
                     环
                 </div>
-
 
                 <div class="brand-text">
 
@@ -183,7 +47,6 @@
             </a>
 
 
-
             <!-- 顶部导航 -->
             <ul class="nav-links">
 
@@ -196,20 +59,17 @@
                     </a>
                 </li>
 
-
                 <li>
                     <a href="organization.html">
                         组织架构
                     </a>
                 </li>
 
-
                 <li>
                     <a href="history.html">
                         部门历史
                     </a>
                 </li>
-
 
                 <li>
                     <a href="division.html">
@@ -218,7 +78,6 @@
                 </li>
 
             </ul>
-
 
         </div>
 
@@ -239,18 +98,16 @@
                 Department Portal
             </span>
 
-
             <h1>
                 西电青协环保部
             </h1>
-
 
             <p>
                 点击不同栏目进入相应页面浏览内容。
             </p>
 
 
-            <!-- 按钮区域 -->
+            <!-- 按钮 -->
             <div class="hero-actions">
 
                 <a
@@ -259,7 +116,6 @@
                 >
                     查看组织架构
                 </a>
-
 
                 <a
                     class="button secondary"
@@ -275,17 +131,15 @@
 
 
         <!-- ==================================================
-             右侧数据统计
+             右侧部门数据
         =================================================== -->
         <div class="hero-visual">
 
             <div class="hero-panel">
 
-
                 <div class="panel-title">
                     Department Snapshot
                 </div>
-
 
 
                 <!-- 四个统计卡片 -->
@@ -305,7 +159,6 @@
                     </div>
 
 
-
                     <div class="metric-card">
 
                         <strong>
@@ -319,7 +172,6 @@
                     </div>
 
 
-
                     <div class="metric-card">
 
                         <strong>
@@ -331,7 +183,6 @@
                         </span>
 
                     </div>
-
 
 
                     <div class="metric-card">
@@ -348,7 +199,6 @@
 
 
                 </div>
-
 
 
                 <!-- 部门关键词 -->
@@ -375,11 +225,9 @@
 
                 </div>
 
-
             </div>
 
         </div>
-
 
     </section>
 
@@ -393,53 +241,9 @@
 
 
         <!-- ==================================================
-             部门合影
-        =================================================== -->
-        <section class="section">
-
-
-            <div class="section-header">
-
-                <div class="section-eyebrow">
-                    Department Photo
-                </div>
-
-
-                <h2 class="section-title">
-                    部门合影
-                </h2>
-
-            </div>
-
-
-
-            <!-- ==================================================
-                 部门合影照片
-
-                 图片位置：
-
-                 images/groupphoto/
-                 be8558eea5705bf523815c05ec62e85f.jpg
-            =================================================== -->
-            <div class="group-photo-frame">
-
-                <img
-                    src="images/groupphoto/be8558eea5705bf523815c05ec62e85f.jpg"
-                    alt="西电青协环保部部门合影"
-                >
-
-            </div>
-
-
-        </section>
-
-
-
-        <!-- ==================================================
              部门介绍导航
         =================================================== -->
         <section class="section">
-
 
             <div class="section-header">
 
@@ -447,13 +251,11 @@
                     Overview
                 </div>
 
-
                 <h2 class="section-title">
                     部门介绍导航
                 </h2>
 
             </div>
-
 
 
             <div class="link-grid">
@@ -476,7 +278,6 @@
                 </a>
 
 
-
                 <!-- 部门历史 -->
                 <a
                     class="link-card"
@@ -492,7 +293,6 @@
                     </h3>
 
                 </a>
-
 
 
                 <!-- 部门分工 -->
@@ -514,7 +314,6 @@
 
             </div>
 
-
         </section>
 
 
@@ -524,9 +323,7 @@
         =================================================== -->
         <section class="section">
 
-
             <article class="card">
-
 
                 <h3>
                     关于环保部
@@ -534,12 +331,9 @@
 
 
                 <p>
-                    西安电子科技大学青年志愿者协会环保部，
-                    是一个以环保公益与志愿服务为核心，
-                    兼具责任感与青春活力的部门。
-                    我们立足校园、走进自然与社区，
-                    通过丰富多样的志愿活动传递绿色理念、
-                    践行环保行动。
+                    西安电子科技大学青年志愿者协会环保部，是一个以环保公益与志愿服务为核心，
+                    兼具责任感与青春活力的部门。我们立足校园、走进自然与社区，
+                    通过丰富多样的志愿活动传递绿色理念、践行环保行动。
                 </p>
 
 
@@ -549,8 +343,7 @@
                     加入<strong>“乐水行”</strong>，
                     关注水环境，在实践中了解生态保护；
                     参与<strong>衣物回收</strong>，
-                    让闲置衣物得到更合理的利用，
-                    让环保融入日常生活；
+                    让闲置衣物得到更合理的利用，让环保融入日常生活；
                     体验充满趣味与互动的<strong>“环保总动员”</strong>，
                     用轻松有趣的方式传播环保知识。
                     同时，我们还会走进社区开展<strong>环境教育活动</strong>，
@@ -560,8 +353,7 @@
 
 
                 <p>
-                    除了志愿活动，
-                    环保部也是一个温暖有趣的大家庭。
+                    除了志愿活动，环保部也是一个温暖有趣的大家庭。
                     我们会不定期组织爬山、聚餐、桌游等团建活动，
                     在志愿服务之外认识志同道合的伙伴，
                     收获友谊与快乐。
@@ -569,19 +361,15 @@
 
 
                 <p>
-                    在环保部，
-                    环保不只是一句口号，
+                    在环保部，环保不只是一句口号，
                     而是一次次亲身参与的行动；
                     志愿服务也不只是付出，
                     更是成长、陪伴与热爱。
-                    期待与你一起，
-                    以青春之名守护绿色，
+                    期待与你一起，以青春之名守护绿色，
                     用点滴行动让校园、社区与自然变得更加美好。
                 </p>
 
-
             </article>
-
 
         </section>
 
@@ -592,13 +380,11 @@
         =================================================== -->
         <section class="section">
 
-
             <div class="section-header">
 
                 <div class="section-eyebrow">
                     Team Building
                 </div>
-
 
                 <h2 class="section-title">
                     团建展示
@@ -607,9 +393,9 @@
             </div>
 
 
-
             <!-- ==================================================
-                 一次显示一张团建照片
+                 团建照片轮播
+                 一次只显示一张
             =================================================== -->
             <div
                 class="team-slider"
@@ -620,37 +406,28 @@
                 <!-- 第一张 -->
                 <img
                     class="team-slide active"
-
                     src="images/team-building/31fca48a9e14d49c37b028f7e38aef6c.jpg"
-
                     alt="西电青协环保部团建活动照片"
                 >
-
 
 
                 <!-- 第二张 -->
                 <img
                     class="team-slide"
-
                     src="images/team-building/5e5d1c8365b9e929eac57babcc81a487.jpg"
-
                     alt="西电青协环保部团建活动照片"
                 >
-
 
 
                 <!-- 第三张 -->
                 <img
                     class="team-slide"
-
                     src="images/team-building/913c1046c208ae21b3522c7a2338ab3c.jpg"
-
                     alt="西电青协环保部团建活动照片"
                 >
 
 
             </div>
-
 
         </section>
 
@@ -677,57 +454,37 @@
     =================================================== -->
     <script>
 
-        /*
-            获取所有团建照片
-        */
+        // 获取所有团建照片
         const teamSlides =
             document.querySelectorAll(".team-slide");
 
 
-        /*
-            当前正在显示的图片
-        */
+        // 当前显示的图片序号
         let currentTeamSlide = 0;
 
 
-
-        /*
-            切换到下一张
-        */
+        // 切换到下一张照片
         function showNextTeamSlide() {
 
-            /*
-                当前照片淡出
-            */
+            // 当前照片淡出
             teamSlides[currentTeamSlide]
                 .classList.remove("active");
 
 
-            /*
-                计算下一张
-
-                第一张 → 第二张
-                第二张 → 第三张
-                第三张 → 第一张
-            */
+            // 下一张照片
             currentTeamSlide =
                 (currentTeamSlide + 1)
                 % teamSlides.length;
 
 
-            /*
-                下一张淡入
-            */
+            // 下一张照片淡入
             teamSlides[currentTeamSlide]
                 .classList.add("active");
 
         }
 
 
-
-        /*
-            每 5 秒切换一次
-        */
+        // 每 5 秒切换一次
         setInterval(
             showNextTeamSlide,
             5000
